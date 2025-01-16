@@ -1,0 +1,150 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+.container_perfil {
+    text-align: center;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-bottom: 2px solid #bdc3c7;
+    margin-bottom: 20px;
+}
+
+.container_perfil p {
+    font-size: 16px;
+    color: #34495e;
+}
+
+.container_perfil a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.container_perfil a:hover {
+    text-decoration: underline;
+}
+
+
+.alojamientos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.alojamiento {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    min-width: 280px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.alojamiento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.alojamiento img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.alojamiento h3 {
+    margin: 15px;
+    font-size: 18px;
+    color: #34495e;
+}
+
+.alojamiento p {
+    margin: 0 15px 15px;
+    color: #7f8c8d;
+}
+
+form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+form select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+
+@media (max-width: 768px) {
+    .container_perfil {
+        padding: 15px;
+    }
+
+    .alojamiento {
+        width: calc(50% - 20px); 
+    }
+
+    form {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Medua querys  */
+
+@media (max-width: 480px) {
+    .container_perfil {
+        font-size: 14px;
+    }
+
+    .alojamiento {
+        width: 100%; 
+    }
+
+    .alojamiento img {
+        height: 150px;
+    }
+
+    form {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    form button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

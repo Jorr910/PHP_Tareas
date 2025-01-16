@@ -1,0 +1,179 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-left: 5%;
+    color: #2c3e50;
+}
+
+
+.header-actions {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+
+.header-actions .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color: #db3434;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+.header-actions .btn:hover {
+    background-color: #ffffff;
+    color: #3498db;
+    border: 2px solid #3498db;
+}
+
+.header-actions .login-btn {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+.header-actions .login-btn:hover {
+    background-color: #ffffff;
+    color: #2ecc71;
+}
+
+.header-actions .register-btn {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.header-actions .register-btn:hover {
+    background-color: #ffffff;
+    color: #e74c3c;
+}
+
+.header-actions .interes-btn {
+    background-color: #010042;
+    border-color: #220c60;
+}
+
+.header-actions .interes-btn:hover {
+    background-color: #ffffff;
+    color:  #010042;
+}
+
+
+.alojamientos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tarjetassss */
+
+.alojamiento {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    /* Tres tarjetas por fila */
+    min-width: 280px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.alojamiento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.alojamiento img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.alojamiento h2 {
+    font-size: 20px;
+    margin: 15px;
+    color: #34495e;
+}
+
+.alojamiento p {
+    font-size: 14px;
+    margin: 0 15px 15px;
+    line-height: 1.5;
+    color: #7f8c8d;
+}
+
+/* MEDAIA QUERYS*/
+
+
+@media (max-width: 768px) {
+    .alojamiento {
+        width: calc(50% - 20px);
+      
+    }
+}
+
+@media (max-width: 480px) {
+    .alojamiento {
+        width: 100%;
+        
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header-actions {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .alojamiento {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .header-actions {
+        position: static;
+        justify-content: center;
+    }
+
+    .header-actions .btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .alojamiento {
+        width: 100%;
+    }
+
+    .alojamiento img {
+        height: 150px;
+    }
+}
