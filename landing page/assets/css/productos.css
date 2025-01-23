@@ -88,10 +88,9 @@ footer {
     margin-top: 2rem;
 }
 
-/* General styles ya proporcionados aquí */
 
 @media (max-width: 768px) {
-    /* Estilos para tabletas */
+   
     header .container {
         flex-direction: column;
         align-items: center;
@@ -107,7 +106,7 @@ footer {
     }
 
     .product-feature img {
-        max-width: 80%; /* Ajustar tamaño de imagen en tablet */
+        max-width: 80%; 
     }
 
     .product-details h1 {
@@ -129,7 +128,69 @@ footer {
 }
 
 @media (max-width: 600px) {
-   
+    @media (max-width: 768px) {
+        
+        header .container {
+            flex-direction: column; 
+            align-items: center;
+            text-align: center;
+        }
+    
+        header nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        header nav ul li {
+            margin: 8px 0; 
+        }
+    
+      
+        .product-feature {
+            padding: 1.5rem; 
+            text-align: center;
+        }
+    
+        .product-feature img {
+            max-width: 80%; 
+            margin-bottom: 1.5rem;
+        }
+    
+        .product-details {
+            margin-top: 1rem;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        .product-details h1 {
+            font-size: 1.8rem; 
+            margin-bottom: 1rem;
+        }
+    
+        .product-details p {
+            font-size: 1rem; 
+            margin-bottom: 1rem;
+        }
+    
+        .product-details .price {
+            font-size: 1.6rem; 
+            margin-bottom: 1rem;
+            color: #cc0000;
+        }
+    
+        .product-details .button {
+            padding: 0.7rem 1.5rem; 
+            font-size: 0.9rem;
+        }
+    
+        
+        footer {
+            font-size: 0.9rem;
+            padding: 1rem;
+        }
+    }
+    
     header .container {
         flex-direction: column;
         align-items: center;
