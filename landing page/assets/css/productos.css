@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #cc0000;
+    color: white;
+    padding: 1rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.product-feature {
+    padding: 2rem;
+    text-align: center;
+}
+
+.product-feature img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-details {
+    margin-top: 1rem;
+}
+
+.product-details h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-details p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.product-details .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #cc0000;
+    margin-bottom: 1rem;
+}
+
+.product-details .button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.product-details .button:hover {
+    background-color: #a30000;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* General styles ya proporcionados aquí */
+
+@media (max-width: 768px) {
+    /* Estilos para tabletas */
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .product-feature img {
+        max-width: 80%; /* Ajustar tamaño de imagen en tablet */
+    }
+
+    .product-details h1 {
+        font-size: 1.5rem;
+    }
+
+    .product-details p {
+        font-size: 1rem;
+    }
+
+    .product-details .price {
+        font-size: 1.8rem;
+    }
+
+    .product-details .button {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+   
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .product-feature img {
+        max-width: 100%; 
+    }
+
+    .product-details h1 {
+        font-size: 1.2rem;
+    }
+
+    .product-details p {
+        font-size: 0.9rem;
+    }
+
+    .product-details .price {
+        font-size: 1.5rem;
+    }
+
+    .product-details .button {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}
