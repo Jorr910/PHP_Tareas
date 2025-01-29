@@ -27,8 +27,7 @@ const Register = () => {
             type="password"
             {...register("Password", { required: true })}
           />
-          <label>FECHA DE NACIMIENTO:</label>
-          <input type="date" {...register("birthday", { required: true })} />
+      
           <button type="submit">ENVIAR</button>
         </form>
       </div>
