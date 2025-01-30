@@ -11,30 +11,27 @@ const NavigationBar = () => {
       </div>
       <ul className="nav-links">
         <li>
-          <NavLink
-            to="/profile"
-            className="nav-link"
-            activeClassName="active-link"
+          <NavLink 
+            to="/profile" 
+            className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
           >
             PERFIL
           </NavLink>
         </li>
 
         <li>
-          <NavLink
-            to="/estadisticas"
-            className="nav-link"
-            activeClassName="active-link"
+          <NavLink 
+            to="/estadistica" 
+            className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
           >
             ESTADÍSTICAS
           </NavLink>
         </li>
 
         <li>
-          <NavLink
-            to="/editprofile"
-            className="nav-link"
-            activeClassName="active-link"
+          <NavLink 
+            to="/editprofile" 
+            className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
           >
             MODIFICAR PERFIL
           </NavLink>
