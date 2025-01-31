@@ -44,6 +44,7 @@ const Profile = () => {
         {user && (
           <h2>Bienvenido, {user.name} {user.last_name} ({user.email})</h2>
         )}
+        <div className="container-buttons">
         <button
           onClick={() => {
             localStorage.removeItem("token");
@@ -54,8 +55,25 @@ const Profile = () => {
         >
           Cerrar sesión
         </button>
+
+        <button
+            className="estadistica-btn"
+            onClick={() => navigate("/estadistica")}
+          >
+            Ver Estadísticas
+          </button>
+
+          <button
+            className="edit-btn"
+            onClick={() => navigate("/editprofile")}
+          >
+            Modificación de usuario
+          </button>
+
+          </div>
+
       </div>
-      <Estadisticas />
+      {/* <Estadisticas />*/}
     </div>
   );
 };

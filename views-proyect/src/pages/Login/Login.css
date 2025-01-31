@@ -68,8 +68,8 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Media queries para tablets y teléfonos */
-@media (max-width: 768px) {
+/* Media Queries para Teléfonos (hasta 767px) */
+@media (max-width: 767px) {
     .container {
         padding: 10px;
     }
@@ -84,33 +84,31 @@ button:hover {
     }
 
     input {
+        width: 90%;
         font-size: 0.9rem;
     }
 
     button {
+        width: 90%;
         font-size: 0.9rem;
     }
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 5px;
-    }
-
+/* Media Queries para Tablets (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
     .container .form-container {
-        width: 100%;
-        padding: 10px;
+        max-width: 600px;
     }
 
     h1 {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     input {
-        font-size: 0.8rem;
+        width: 80%;
     }
 
     button {
-        font-size: 0.8rem;
+        width: 85%;
     }
 }

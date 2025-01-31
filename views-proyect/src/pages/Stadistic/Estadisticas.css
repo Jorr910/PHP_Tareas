@@ -1,0 +1,193 @@
+/* Estilos generales */
+
+  .container-estadistica {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #253041;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+ .container-estadistica h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  /* Filtros */
+  .opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .opciones label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .opciones select,
+  .opciones input[type="date"],
+  .opciones input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .opciones input[type="number"] {
+    width: 100px;
+  }
+  
+  .opciones button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .opciones button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Errores*/
+  .container-estadistica p {
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  .error {
+    color: #dc3545;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Resultados */
+
+  .estadistica-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .estadistica-box h3 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .estadistica-box pre {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 14px;
+    color: #333;
+  }
+  
+/* Media queries para tablets (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container-estadistica {
+      max-width: 90%;
+      padding: 15px;
+  }
+
+  .button {
+      font-size: 1.8rem;
+  }
+
+  .opciones select,
+  .opciones input[type="date"],
+  .opciones input[type="number"] {
+      font-size: 14px;
+  }
+
+  .opciones button {
+      font-size: 14px;
+  }
+
+  .container-estadistica p {
+      font-size: 16px;
+  }
+
+  .estadistica-box pre {
+      font-size: 13px;
+  }
+}
+
+/* Media queries para teléfonos (hasta 767px) */
+@media (max-width: 767px) {
+  .container-estadistica {
+      max-width: 100%;
+      padding: 10px;
+  }
+
+  .button {
+      font-size: 1.5rem;
+  }
+
+  .opciones {
+      gap: 10px;
+  }
+
+  .opciones select,
+  .opciones input[type="date"],
+  .opciones input[type="number"] {
+      font-size: 12px;
+      padding: 8px;
+  }
+
+  .opciones input[type="number"] {
+      width: 80px;
+  }
+
+  .opciones button {
+      padding: 8px 15px;
+      font-size: 12px;
+  }
+
+  .container-estadistica h1 {
+      font-size: 1.5rem;
+  }
+
+  .container-estadistica p {
+      font-size: 14px;
+  }
+
+  .estadistica-box {
+      padding: 15px;
+  }
+
+  .estadistica-box h3 {
+      font-size: 1.2rem;
+  }
+
+  .estadistica-box pre {
+      font-size: 12px;
+      padding: 10px;
+  }
+}

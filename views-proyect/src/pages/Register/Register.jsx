@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import "./Register.css";
-import { Navigate, Link } from "react-router-dom";
+import { Navigate, Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
   const {
@@ -15,6 +15,8 @@ const Register = () => {
   // Para mostrar los mensajes mensajes.
 
   const [message, setMessage] = useState("");
+
+  const navigate = useNavigate();
 
   // Mandamos los datos con axios
 
@@ -29,13 +31,22 @@ const Register = () => {
 
       setMessage("Registro exitoso. Ahora puedes iniciar sesión.");
 
+      window.alert("Registro exitoso. Ahora puedes iniciar sesión.");
+
       // Limpiamos el formulario
 
       reset();
 
+      // redirigimos a login despues de 2 seg
+
+      setTimeout(()=>{
+        navigate("/login");
+      }, 1000);
+
       // En caso de error
     } catch (error) {
       setMessage("Error al registrarse. Inténtalo de nuevo.");
+      window.alert("Error al registrarse. Inténtalo de nuevo.");
     }
   };
 

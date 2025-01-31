@@ -1,15 +1,96 @@
+
 .Container {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
+    background-color: #253041; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    color: #ffffff; 
 }
 
-h1 {
+.Container h1 {
+    font-size: 2rem;
     margin-bottom: 20px;
+    color: #38bdf8; 
 }
 
-p {
-    font-size: 18px;
-    margin-bottom: 10px;
+.Container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffffff; 
+}
+
+.Container button {
+    padding: 10px 20px;
+    background-color: #ff0000; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    align-items: center;
+}
+
+.container-buttons .estadistica-btn {
+    background-color: green;
+}
+
+.container-buttons .edit-btn {
+    background-color: mediumslateblue;
+}
+
+.Container button:hover {
+    background-color: #1e40af; 
+}
+
+/* Media Queries para Tablets (768px a 1023px) */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .Container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .Container h1 {
+        font-size: 1.8rem;
+    }
+
+    .Container h2 {
+        font-size: 1.3rem;
+    }
+
+    .Container button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Media Queries para Teléfonos (hasta 767px) */
+@media (max-width: 767px) {
+    .Container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .Container h1 {
+        font-size: 1.5rem;
+    }
+
+    .Container h2 {
+        font-size: 1.1rem;
+    }
+
+    .Container button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
 }
