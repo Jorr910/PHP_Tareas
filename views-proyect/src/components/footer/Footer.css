@@ -1,0 +1,22 @@
+.footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Media Query para Tablets (768px - 1024px) */
+  @media (max-width: 1024px) {
+    .footer {
+      padding: 0.8rem; 
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Media Query para Teléfonos (hasta 767px) */
+  @media (max-width: 767px) {
+    .footer {
+      padding: 0.5rem; 
+      font-size: 0.8rem; 
+    }
+  }

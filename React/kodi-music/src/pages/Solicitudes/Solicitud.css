@@ -1,0 +1,97 @@
+.solicitud-container {
+    max-width: 500px;
+    height: 62vh;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: #ffffff; 
+  }
+  
+  .solicitud-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ffffff; 
+  }
+  
+  /* Estilos para los grupos de formulario */
+  .form-group {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #b3b3b3; 
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #333; 
+    color: #ffffff; 
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #b91d85; 
+    outline: none;
+  }
+  
+  /* Estilos para los mensajes de error */
+  .error-message {
+    color: #ff4d4d; /* Rojo para errores */
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+
+  .button-enviar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Estilos para el botón de envío */
+  button[type="submit"] {
+    width: 99%;
+    padding: 12px;
+    background-color: #1db954; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #1ed760; /* Verde más claro al pasar el mouse */
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 600px) {
+    .solicitud-container {
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    .solicitud-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .form-group input {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    button[type="submit"] {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  }

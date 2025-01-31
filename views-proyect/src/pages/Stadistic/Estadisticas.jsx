@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Estadisticas.css";
 import NavBar from "../../components/header/Header";
+import Footer from "../../components/footer/Footer"
 
 const Estadisticas = () => {
   // Estados para los rangos de consultas.
@@ -141,6 +142,7 @@ const Estadisticas = () => {
           </div>
         )}
       </div>
+      {/*<Footer />*/}
     </div>
   );
 };

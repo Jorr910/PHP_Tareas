@@ -1,5 +1,12 @@
-
-.Container {
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #1e1e1e; 
+    color: #ffffff;
+  }
+  
+  .Container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -8,21 +15,22 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     color: #ffffff; 
-}
-
-.Container h1 {
+    flex: 1;
+  }
+  
+  .Container h1 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #38bdf8; 
-}
-
-.Container h2 {
+  }
+  
+  .Container h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     color: #ffffff; 
-}
-
-.Container button {
+  }
+  
+  .Container button {
     padding: 10px 20px;
     background-color: #ff0000; 
     color: #ffffff; 
@@ -31,66 +39,75 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.container-buttons {
+    width: 100%; /* Botones ocupen todo el ancho */
+    max-width: 300px; /* Ancho máximo para botones */
+  }
+  
+  .container-buttons {
     display: flex;
     flex-direction: column;
     gap: 10px; 
     align-items: center;
-}
-
-.container-buttons .estadistica-btn {
+  }
+  
+  .container-buttons .estadistica-btn {
     background-color: green;
-}
-
-.container-buttons .edit-btn {
+  }
+  
+  .container-buttons .edit-btn {
     background-color: mediumslateblue;
-}
-
-.Container button:hover {
+  }
+  
+  .Container button:hover {
     background-color: #1e40af; 
-}
-
-/* Media Queries para Tablets (768px a 1023px) */
-
-@media (min-width: 768px) and (max-width: 1023px) {
+  }
+  
+  /* Media Queries para Tablets (768px a 1023px) */
+  @media (min-width: 768px) and (max-width: 1023px) {
     .Container {
-        max-width: 90%;
-        padding: 15px;
+      max-width: 90%;
+      padding: 15px;
     }
-
+  
     .Container h1 {
-        font-size: 1.8rem;
+      font-size: 1.8rem;
     }
-
+  
     .Container h2 {
-        font-size: 1.3rem;
+      font-size: 1.3rem;
     }
-
+  
     .Container button {
-        font-size: 0.9rem;
-        padding: 8px 16px;
+      font-size: 0.9rem;
+      padding: 8px 16px;
+      max-width: 250px; /* Ajuste de ancho para tablets */
     }
-}
-
-/* Media Queries para Teléfonos (hasta 767px) */
-@media (max-width: 767px) {
+  }
+  
+  /* Media Queries para Teléfonos (hasta 767px) */
+  @media (max-width: 767px) {
     .Container {
-        max-width: 100%;
-        padding: 10px;
+      max-width: 100%;
+      padding: 10px;
+      margin: 10px; /* Menos margen para pantallas pequeñas */
+      border-radius: 0; /* Sin bordes redondeados en móviles */
     }
-
+  
     .Container h1 {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
-
+  
     .Container h2 {
-        font-size: 1.1rem;
+      font-size: 1.1rem;
     }
-
+  
     .Container button {
-        font-size: 0.8rem;
-        padding: 6px 12px;
+      font-size: 0.8rem;
+      padding: 8px 12px;
+      max-width: 100%; /* Botones ocupen todo el ancho en móviles */
     }
-}
+  
+    .container-buttons {
+      gap: 8px; /* Menos espacio entre botones en móviles */
+    }
+  }

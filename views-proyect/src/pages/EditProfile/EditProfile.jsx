@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./EditProfile.css";
 import Navbar from "../../components/header/Header";
+import Footer from "../../components/footer/Footer"
 
 const EditProfile = () => {
     // manejo del formulario
@@ -132,6 +133,7 @@ const EditProfile = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };
