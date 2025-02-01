@@ -2,7 +2,8 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom'; // Importa useNavigate para la redirección
 import Footer from '../../components/Footer/Footer';
-import Header from "../../components/Header/Header"
+import Header from "../../components/Header/Header";
+import "./Solicitud.css"
 
 const Solicitud = () => {
   const {
