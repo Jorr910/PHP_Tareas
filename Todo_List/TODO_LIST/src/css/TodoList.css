@@ -1,0 +1,104 @@
+
+.container-list {
+  display:flex; 
+  justify-content: center;
+}
+
+.container-list .todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container-list .todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #c42828;
+  border-radius: 8px;
+  background-color: #e7d8d8;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  max-width: 600px;
+
+}
+
+.container-list .todo-item.completado {
+  background-color: #d4edda;
+  border-color: #28a745;
+  
+}
+
+.container-list .todo-text {
+  flex: 1;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.container-list .delete-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.container-list .delete-button:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .container-list .todo-item {
+    padding: 10px;
+    margin: 6px 0;
+    max-width: 90%;
+  }
+
+  .container-list .todo-text {
+    font-size: 14px;
+  }
+
+  .container-list .delete-button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-list .todo-item {
+    padding: 8px;
+    margin: 4px 0;
+    max-width: 100%;
+  }
+
+  .container-list .todo-text {
+    font-size: 12px;
+  }
+
+  .container-list .delete-button {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container-list .todo-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .container-list .delete-button {
+    width: 100%;
+    text-align: center;
+  }
+}
