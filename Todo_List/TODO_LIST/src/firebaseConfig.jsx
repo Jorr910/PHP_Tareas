@@ -4,7 +4,7 @@ import { getFirestore } from "firebase/firestore";
 // configuraciones obtenidas en FIREBASES
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCFlhDiqSbgrIm7LCRDkToiQUiLQYdWlwk",
+    apiKey: "",
     authDomain: "todo-list-app-83e96.firebaseapp.com",
     projectId: "todo-list-app-83e96",
     storageBucket: "todo-list-app-83e96.firebasestorage.app",
